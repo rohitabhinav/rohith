@@ -1,0 +1,19 @@
+{
+    "apps": [
+      {
+        "name": "analytics-consume-ship-gsk",
+        "script": "./dist/ImAnalyticsConsume_Gsk.js",
+        "exec_mode": "cluster",
+        "instances": 1,
+        "env_gsk": {
+            "NODE_ENV": "DHL",
+            "KAFKA_CLIENT_ID": "Kafka-app",
+            "KAFKA_CLIENT_ID_ANASHIP_GSK":"Ana-Gsk-Kafka-app",
+            "GROUP_ID": "analytics-consumer-group-gsk",
+            "IM_TOPIC_ANASHIP":"IM_SHIPMENT_ANALYTICS_TOPIC",
+            "CONSUME_TOPIC": "IM_SHIPMENT_ANALYTICS_TOPIC_GSK"
+        }
+  
+      }
+    ]
+  }

@@ -1,0 +1,20 @@
+{
+  "apps": [
+    {
+      "name": "analytics-consume-ship",
+      "script": "./dist/ImAnalyticsConsume.js",
+      "exec_mode": "cluster",
+      "instances": 1,
+      "env_dhl": {
+          "NODE_ENV": "DHL",
+          "KAFKA_CLIENT_ID": "Kafka-app",
+          "KAFKA_CLIENT_ID_ANASHIP":"Ana-Kafka-app",
+          "GROUP_ID": "analytics-consumer-group",
+          "IM_TOPIC_ANASHIP":"IM_SHIPMENT_ANALYTICS_TOPIC",
+          "IM_SHIPMENT_ANALYTICS_TOPIC":"IM_SHIPMENT_ANALYTICS_TOPIC",
+          "CONSUME_TOPIC": "IM_SHIPMENT_ANALYTICS_TOPIC"
+      }
+
+    }
+  ]
+}

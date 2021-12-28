@@ -1,0 +1,25 @@
+{
+    "apps": [
+      {
+        "name": "ana-gsk",
+        "script": "./dist/app.js",
+        "exec_mode": "cluster",
+        "instances": 1,
+        "env_dgf": {
+          "DB_HOST": "10.15.3.8",
+          "DB_USER": "ship_analytics",
+          "DB_PASS": "bless123$",
+          "DB_NAME": "ship_analytics",
+          "BASE_URL":"/analytics",
+          "KEY":"585064b851255a61aed6ec2e54ad057a27a5060ec5c767e9d4230693463fde69",
+          "KAFKA_CLIENT_ID": "Kafka-app",
+          "PORT": 4005,
+          "KAFKA_BROKERS": "",
+          "NODE_ENV": "DGF",
+          "NODE_ID": "DGF"
+        }
+      }
+    ]
+  }
+  
+  

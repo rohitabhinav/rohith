@@ -1,0 +1,19 @@
+{
+    "apps": [
+      {
+        "name": "analytics-consume-ship-az",
+        "script": "./dist/ImAnalyticsConsume_Az.js",
+        "exec_mode": "cluster",
+        "instances": 1,
+        "env_az": {
+            "NODE_ENV": "DHL",
+            "KAFKA_CLIENT_ID": "Kafka-app",
+            "KAFKA_CLIENT_ID_ANASHIP_AZ":"Ana-Az-Kafka-app",
+            "GROUP_ID": "analytics-consumer-group-astrazeneca",
+            "IM_TOPIC_ANASHIP":"IM_SHIPMENT_ANALYTICS_TOPIC",
+            "CONSUME_TOPIC": "IM_SHIPMENT_ANALYTICS_TOPIC_AZ"
+        }
+  
+      }
+    ]
+  }

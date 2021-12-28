@@ -1,0 +1,24 @@
+{
+    "apps": [
+      {
+        "name": "ana-gsk",
+        "script": "./dist/app.js",
+        "exec_mode": "cluster",
+        "instances": 1,
+        "env": {
+          "DB_HOST": "35.154.225.2",
+          "DB_USER": "analytics",
+          "DB_PASS": "Rvdas@2021",
+          "DB_NAME": "analytics",
+          "BASE_URL":"/analytics",
+          "KEY":"",
+          "KAFKA_CLIENT_ID": "Kafka-app",
+          "PORT": 4005,
+          "KAFKA_BROKERS": "",
+          "NODE_ENV": "DGF",
+          "NODE_ID": "DGF"
+        }
+      }
+    ]
+  }
+  
