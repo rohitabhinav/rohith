@@ -5,6 +5,7 @@
     "main": "index.js",
     "scripts": {
         "tsc": "tsc",
+        "build":"npx webpack --config webpack.app_local.js --progress",
         "buildDgf": "npx webpack --config webpack.app_dgf.js --progress",
         "buildGsk": "npx webpack --config webpack.app_gsk.js --progress",
         "buildAz": "npx webpack --config webpack.app_az.js --progress",
